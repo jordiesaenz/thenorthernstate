@@ -1,0 +1,47 @@
+section.blog-listing {
+  margin-top: unit(2);
+  .blog-listing-title {
+    font-size: 2rem;
+    font-family: $sans-serif;
+    font-weight: 700;
+  }
+  .category-tag {
+    text-align: right;
+    color: $white;
+    z-index: 900;
+    padding: unit(0.5);
+    @include position(absolute, unit(-2.5) unit(2) null null);
+    &-brunch {
+      background-color: $pink;
+    }
+    &-coffee {
+      background-color: $blue;
+    }
+  }
+  .article-link {
+    color: $black;
+    text-decoration: none;
+    @include transition(none);
+    .panel { position: relative; }
+    .content {
+      width: calc(100% - 30px);
+      margin: auto;
+      text-align: center;
+      color: $black;
+      z-index: 105;
+      @include position(absolute, 50% null null 50%);
+      @include transform(translate(-50%, -50%));
+    }
+    &:hover, &:active, &:focus {
+      color: $pink;
+      .panel {
+        @include shadow(2);
+        @include transform(translateY(-3px));
+      }
+      .panel-image {
+        background-size: 105%;
+        &-overlay { opacity: 1; }
+      }
+    }
+  }
+}

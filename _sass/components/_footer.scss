@@ -1,0 +1,107 @@
+footer {
+  padding-top: 60px;
+  padding-bottom: 15px;
+  position: relative;
+  @extend %transition;
+  .social {
+    float: left;
+    @include position(absolute, null null 0 null);
+    a {
+      color: $black;
+      margin-right: 7.5px;
+      text-decoration: none;
+      &:hover, &:active, &:focus {
+        color: $blue;
+      }
+    }
+    @media (max-width: $sm-max) {
+      display: block;
+      float: none;
+      margin: auto;
+      text-align: center;
+      position: relative;
+      .fa { font-size: 2rem; }
+      a { margin: 0 7.5px;}
+    }
+  }
+  .mc-field-group {
+    height: 45px;
+    @media (max-width: $sm-max) {
+      height: auto;
+    }
+  }
+  #mc_embed_signup {
+    float: right;
+    display: inline-block;
+    height: 45px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    @include position(relative);
+    div.mce_inline_error {
+      background-color: transparent;
+      color: $red;
+      text-align: center;
+      z-index: 1;
+      @include position(absolute, 15px null null 50%);
+      @include transform(translateX(-50%));
+    }
+    label { display: none; }
+    p {
+      font-family: $sans-serif;
+      display: inline;
+      font-size: 1.2rem;
+      @include position(absolute, -45px null null 0);
+      @include transform(translateX(6px));
+      @media (max-width: $sm-max) {
+        display: block;
+        float: none;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        top: 0;
+      }
+    }
+    @media (max-width: $sm-max) {
+      height: auto;
+      display: block;
+      float: none;
+      margin: auto;
+      margin-top: 7.5px;
+    }
+  }
+  input[type="email"] {
+    background-color: $white;
+    border: 3px solid $black;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    padding: 0 60px 0 15px;
+    @include border-radius(0);
+    @include transform(translateX(6px));
+    &:hover, &:active, &:focus {
+      outline: none;
+    }
+    & + label {
+      display: none;
+      visibility: hidden;
+    }
+    @media (max-width: $sm-max) {
+      display: block;
+      padding: 15px;
+      width: 100%;
+      @include transform(none);
+    }
+  }
+  .btn {
+    height: 100%;
+    vertical-align: middle;
+    padding: 0 15px;
+    @include btn-styles($white, $black, $white, $blue);
+    @media (max-width: $sm-max) {
+      display: block;
+      padding: 15px;
+      width: 100%;
+    }
+  }
+}

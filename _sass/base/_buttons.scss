@@ -1,0 +1,32 @@
+@mixin btn-styles($color, $background-color, $hover-color, $hover-background-color) {
+  color: $color;
+  background-color: $background-color;
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    color: $hover-color;
+    background-color: $hover-background-color;
+  }
+}
+%btn-block-styles {
+  display: block;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.btn {
+  display: inline-block;
+  margin: 0;
+  padding: 15px 30px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  @extend %transition;
+  @include border-radius(0);
+  &.btn-block {
+    @extend %btn-block-styles;
+  }
+}

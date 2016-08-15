@@ -1,0 +1,68 @@
+@mixin rainbow-text-shadow($amount) {
+  text-shadow: (-$amount) 0 0 $cyan, 0 (-$amount) 0 $purple, ($amount) 0 0 $pink, 0 ($amount) 0 $yellow;
+}
+@mixin shadow($number) {
+  @if $number == 1 {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  @if $number == 2 {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@mixin focus() {
+  &:focus, &:active, &:hover {
+    @content;
+  }
+}
+
+
+@mixin border-top-radius($radii) {
+  border-top-left-radius: $radii;
+  border-top-right-radius: $radii;
+}
+
+@mixin border-right-radius($radii) {
+  border-bottom-right-radius: $radii;
+  border-top-right-radius: $radii;
+}
+
+@mixin border-bottom-radius($radii) {
+  border-bottom-left-radius: $radii;
+  border-bottom-right-radius: $radii;
+}
+
+@mixin border-left-radius($radii) {
+  border-bottom-left-radius: $radii;
+  border-top-left-radius: $radii;
+}
+@mixin border-radius($value) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+@mixin border-radii($top-left: 0, $top-right: 0, $bottom-left: 0, $bottom-right: 0) {
+  -webkit-border-top-left-radius: $top-left;
+  -webkit-border-top-right-radius: $top-right;
+  -webkit-border-bottom-left-radius: $bottom-left;
+  -webkit-border-bottom-right-radius: $bottom-right;
+
+  -moz-border-radius-topleft: $top-left;
+  -moz-border-radius-topright: $top-right;
+  -moz-border-radius-bottomleft: $bottom-left;
+  -moz-border-radius-bottomright: $bottom-right;
+
+  border-top-left-radius: $top-left;
+  border-top-right-radius: $top-right;
+  border-bottom-left-radius: $bottom-left;
+  border-bottom-right-radius: $bottom-right;
+
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}

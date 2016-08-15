@@ -1,0 +1,40 @@
+// Layout
+$base-unit: 15px;
+@function unit($i) {
+  @return $i * $base-unit;
+}
+
+// Breakpoints
+$xs-max: 479px;
+$sm-min: $xs-max + 1;
+$sm-max: 767px;
+$md-min: $sm-max + 1;
+$md-max: 991px;
+$lg-min: $md-max + 1;
+$lg-max: 1499px;
+$xl-min: $lg-max + 1;
+
+// Container
+$container-gutter: unit(4);
+$container-gutter-md: unit(3);
+$container-gutter-sm: unit(2);
+$container-gutter-xs: unit(1);
+
+// Colors
+$black: #3C3739;
+$black-80: rgba($black, .8);
+$black-50: rgba($black, .5);
+$white: #fff;
+$white-80: rgba(255, 255, 255, .8);
+$white-50: rgba(255, 255, 255, .5);
+
+$red: #e46;
+
+$pink: #f8b;
+$blue: #3ef;
+$yellow: #fc7;
+$light-gray: #f9fbfb;
+
+// Fonts
+$sans-serif: "Museo Sans", sans-serif;
+$serif: "Museo", serif;

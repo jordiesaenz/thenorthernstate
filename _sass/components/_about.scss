@@ -1,0 +1,51 @@
+section.about {
+  h2 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0 0 15px 0;
+  }
+  p {
+    padding: 0;
+    @extend %margin-top;
+  }
+  ul {
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    padding: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      @media (max-width: $xs-max) {
+        display: block;
+      }
+    }
+  }
+  .info-box {
+    @extend .text-left;
+    @include transition(transform .4s ease, opacity .4s ease, height .4s ease, width .4s ease, box-shadow .4s ease, background-color .4s ease);
+    &.hide {
+      background-color: $white-50;
+      height: 0;
+      margin: 0;
+      opacity: 0;
+      padding: 0;
+      visibility: hidden;
+      width: 0;
+      @include shadow(1);}
+      @include transform(translateY(15px));
+    &.active {
+      background-color: $white-80;
+      display: block;
+      margin-top: 30px;
+      opacity: 1;
+      padding: 30px;
+      @include position(relative, 0 null null 0);
+      @include shadow(2);
+      @include transform(translateY(0));
+    }
+  }
+}
