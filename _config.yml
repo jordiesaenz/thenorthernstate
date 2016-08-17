@@ -17,34 +17,35 @@ url: "http://jordiesaenz.github.io/foodlyweds" # the base hostname & protocol fo
 twitter_username: jekyllrb
 github_username:  jordiesaenz
 
+# Gems
+gems: [github-pages, octopress, octopress-paginate, octopress-hooks, octopress-autoprefixer, font-awesome-sass]
+
 # Collections
 collections:
   posts:
     name: posts
     output: true
-    path: blog/posts/:path
+    path: /blog/posts/:path
   lists:
     name: lists
     output: true
-    path: lists/:path
-
+    path: /lists/:path
 
 # Pagination
 pagination:
-  per_page:     6             # maximum number of items per page
-  limit:        false         # Maximum number of pages to paginate (false for unlimited)
-  permalink:    blog/:num
+  limit: false
+  per_page: 6
+  permalink: /:num/
+  title_suffix: " (page :num)"
+
+paginate_path: "/blog/:num"
 
 # Outputting
-permalink:     blog/posts/:slug
+permalink:     /blog/posts/:slug
 
 
 # Build settings
 markdown: kramdown
-
-
-# Gems
-gems: [github-pages, octopress, octopress-paginate, font-awesome-sass]
 
 # Sass
 sass:
