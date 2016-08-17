@@ -18,7 +18,7 @@ twitter_username: jekyllrb
 github_username:  jordiesaenz
 
 # Gems
-gems: [jekyll-paginate, github-pages, octopress, octopress-paginate, octopress-hooks, octopress-autoprefixer, font-awesome-sass]
+gems: [jekyll-paginate, rack-jekyll, octopress, octopress-paginate, octopress-hooks, octopress-autoprefixer, font-awesome-sass]
 
 # Collections
 collections:
@@ -46,3 +46,6 @@ markdown: kramdown
 # Sass
 sass:
   sass_dir: _sass
+
+# Exclude
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
