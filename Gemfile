@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'bundler'
-
 gem 'jekyll'
 gem 'jekyll-paginate'
+gem 'rack-jekyll'
 
 gem 'octopress'
 gem 'octopress-hooks', git: 'https://github.com/octopress/hooks.git'
