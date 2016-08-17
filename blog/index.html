@@ -1,8 +1,7 @@
 ---
 layout: default
 permalink: /blog/
-paginate:
-  collection: posts
+paginate: true
 ---
 
 <section class="posts blog-feed">
@@ -11,7 +10,7 @@ paginate:
 
     <div class="batch-g batch-g--padding batch-g--align-center">
 
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
           <a class="post-link batch-c-1-1 batch-c-sm-1-2 batch-c-md-1-3" href="{{ post.url }}">
             <div class="panel">
               <div class="panel-image" style="background-image: url('{{ post.image }}')">
