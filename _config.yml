@@ -46,3 +46,6 @@ markdown: kramdown
 # Sass
 sass:
   sass_dir: _sass
+
+# Exclude
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
