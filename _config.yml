@@ -35,10 +35,6 @@ collections:
 pagination:
   limit: false
   per_page: 6
-  permalink: /:num/
-  title_suffix: " (page :num)"
-
-paginate_path: "/blog/:num"
 
 # Outputting
 permalink:     /blog/posts/:slug
