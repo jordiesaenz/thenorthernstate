@@ -1,6 +1,6 @@
-section.blog-listing {
+section.blog-feed {
   margin-top: unit(2);
-  .blog-listing-title {
+  .blog-feed-title {
     font-size: 2rem;
     font-family: $sans-serif;
     font-weight: 700;
@@ -18,7 +18,7 @@ section.blog-listing {
       background-color: $blue;
     }
   }
-  .article-link {
+  .post-link {
     color: $black;
     text-decoration: none;
     @include transition(none);
@@ -32,7 +32,7 @@ section.blog-listing {
       @include position(absolute, 50% null null 50%);
       @include transform(translate(-50%, -50%));
     }
-    &:hover, &:active, &:focus {
+    @include focus() {
       color: $pink;
       .panel {
         @include shadow(2);

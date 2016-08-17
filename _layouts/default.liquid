@@ -2,12 +2,17 @@
 <html>
   {% include head.liquid %}
   <body>
-    {% include header.liquid %}
-
-    {{ content }}
-
+    <div class="sticky-footer-wrap">
+      <div class="content-wrap">
+        {% include header.liquid %}
+        {{ content }}
+      </div>
+      <div class="footer-wrap">
+        {% include footer.liquid %}
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="scripts/header.js"></script>
-    <script type="text/javascript" src="scripts/instafeed.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/scripts/header.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/scripts/instafeed.js"></script>
   </body>
 </html>

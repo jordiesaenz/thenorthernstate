@@ -3,12 +3,12 @@ div.marquee {
   height: unit(20);
   margin-top: unit(1);
   position: relative;
-  background: url('https://hd.unsplash.com/photo-1464096338057-a1b7055ef5cb');
   background-size: cover;
   background-position: center 60%;
-  .marquee-link {
+  .marquee-info {
     @include position(absolute, 50% null null 50%);
     @include transform(translate(-50%, -50%));
+    font-family: $sans-serif;
     text-align: center;
     margin: auto;
     text-decoration: none;
@@ -18,12 +18,14 @@ div.marquee {
     padding: unit(2);
     font-size: 2.4rem;
     font-weight: 700;
-    cursor: pointer;
     width: 100%;
     max-width: 550px;
-    @include focus() {
-      background-color: $white-80;
-      color: $black;
+    &.marquee-link {
+      cursor: pointer;
+      @include focus() {
+        background-color: $white-80;
+        color: $black;
+      }
     }
     @media (max-width: $sm-max) {
       max-width: 310px;

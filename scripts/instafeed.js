@@ -6,8 +6,8 @@ var feed = new Instafeed({
       userId: '2873770449',
       accessToken: '2873770449.1677ed0.b0cecee3f67d4922a4baaef4077c005d',
       resolution: 'standard_resolution',
-      limit: 6,
-      template: '<a class="batch-c-1-2 batch-c-sm-1-1 batch-c-md-1-2 batch-c-lg-1-3" href="{{link}}"><img class="img-responsive" src="{{image}}" /></a>'
+      limit: 12,
+      template: '<a class="instagram-post batch-c-1-2 batch-c-sm-1-1 batch-c-md-1-2 batch-c-lg-1-3" href="{{link}}"><img class="img-responsive" src="{{image}}" /><ul class="post-info"><li><i class="fa fa-heart"></i> {{likes}}</li><li><i class="fa fa-comment"></i> {{comments}}</li></ul><div class="post-caption">{{caption}}</div></a>'
     });
 
 feed.run();

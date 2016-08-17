@@ -1,9 +1,10 @@
 ---
 title: "Tasty N Alder"
 image: https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/s750x750/sh0.08/e35/13694886_266518923732223_819284715_n.jpg
+marquee_image: https://hd.unsplash.com/photo-1424847651672-bf20a4b0982b
 layout: post
 date:   2016-08-12
-categories: coffee
+categories: brunch
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

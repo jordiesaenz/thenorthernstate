@@ -1,3 +1,7 @@
-<div class="marquee">
-  <a class="marquee-link">Check out the 10 Best Burgers in Orange County <i class="fa fa-arrow-right"></i></a>
+<div class="marquee" style="background-image: url('{{ include.image }}')">
+  {% if include.link %}
+    <a href="{{ include.link }}" class="marquee-info marquee-link">{{ include.content }} <i class="fa fa-arrow-right"></i></a>
+  {% else %}
+    <p class="marquee-info">{{ include.content }}</p>
+  {% endif %}
 </div>

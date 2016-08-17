@@ -13,16 +13,38 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://www.foodlyweds.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  jordiesaenz
+
+# Collections
+collections:
+  posts:
+    name: posts
+    output: true
+    path: blog/posts/:path
+  lists:
+    name: lists
+    output: true
+    path: lists/:path
+
+
+# Pagination
+pagination:
+  per_page:     6             # maximum number of items per page
+  limit:        false         # Maximum number of pages to paginate (false for unlimited)
+  permalink:    blog/:num
+
+# Outputting
+permalink:     blog/posts/:slug
+
 
 # Build settings
 markdown: kramdown
 
 
 # Gems
-gems: [bourbon, font-awesome-sass]
+gems: [github-pages, octopress, octopress-paginate, bourbon, font-awesome-sass]
 
 # Sass
 sass:

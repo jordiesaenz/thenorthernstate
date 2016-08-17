@@ -1,28 +1,16 @@
 footer {
-  padding-top: 60px;
-  padding-bottom: 15px;
+  background-color: $white;
+  margin-top: unit(4);
+  padding: unit(2);
   position: relative;
   @extend %transition;
-  .social {
-    float: left;
-    @include position(absolute, null null 0 null);
-    a {
-      color: $black;
-      margin-right: 7.5px;
-      text-decoration: none;
-      &:hover, &:active, &:focus {
-        color: $blue;
-      }
-    }
-    @media (max-width: $sm-max) {
-      display: block;
-      float: none;
-      margin: auto;
-      text-align: center;
-      position: relative;
-      .fa { font-size: 2rem; }
-      a { margin: 0 7.5px;}
-    }
+  .copyright {
+    display: block;
+    float: none;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    margin-top: unit(2);
   }
   .mc-field-group {
     height: 45px;
@@ -31,9 +19,7 @@ footer {
     }
   }
   #mc_embed_signup {
-    float: right;
-    display: inline-block;
-    height: 45px;
+    display: block;
     margin: auto;
     position: relative;
     text-align: center;
@@ -49,18 +35,10 @@ footer {
     label { display: none; }
     p {
       font-family: $sans-serif;
-      display: inline;
+      display: block;
       font-size: 1.2rem;
-      @include position(absolute, -45px null null 0);
-      @include transform(translateX(6px));
-      @media (max-width: $sm-max) {
-        display: block;
-        float: none;
-        margin: auto;
-        text-align: center;
-        position: relative;
-        top: 0;
-      }
+      text-align: center;
+      margin: 0 0 unit(1);
     }
     @media (max-width: $sm-max) {
       height: auto;
@@ -98,6 +76,7 @@ footer {
     vertical-align: middle;
     padding: 0 15px;
     @include btn-styles($white, $black, $white, $blue);
+    @include transform(translateY(-1px));
     @media (max-width: $sm-max) {
       display: block;
       padding: 15px;
