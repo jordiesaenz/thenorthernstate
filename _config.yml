@@ -44,7 +44,7 @@ markdown: kramdown
 
 
 # Gems
-gems: [github-pages, octopress, octopress-paginate, bourbon, font-awesome-sass]
+gems: [github-pages, octopress, octopress-paginate, font-awesome-sass]
 
 # Sass
 sass:

@@ -7,7 +7,5 @@ gem 'octopress-paginate'
 
 gem 'github-pages'
 
-gem 'bourbon'
-
 gem 'sprockets'
 gem 'font-awesome-sass'
