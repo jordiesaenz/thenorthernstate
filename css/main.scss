@@ -4,6 +4,9 @@
 
 @import "normalize";
 
+
+@import "base/variables";
+
 @import "bourbon/settings/prefixer";
 @import "bourbon/settings/px-to-em";
 @import "bourbon/settings/asset-pipeline";
@@ -87,7 +90,7 @@
 
 @import "bourbon/bourbon-deprecated-upcoming";
 
-@import "base/variables";
+
 
 
 @import "batch";
