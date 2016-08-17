@@ -166,6 +166,7 @@ DEPENDENCIES
   font-awesome-sass
   github-pages
   jekyll
+  jekyll-paginate
   octopress
   octopress-autoprefixer
   octopress-hooks!

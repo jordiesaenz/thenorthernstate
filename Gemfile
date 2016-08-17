@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
+gem 'jekyll-paginate'
 
 gem 'octopress'
 gem 'octopress-hooks', git: 'https://github.com/octopress/hooks.git'

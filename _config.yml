@@ -18,7 +18,7 @@ twitter_username: jekyllrb
 github_username:  jordiesaenz
 
 # Gems
-gems: [github-pages, octopress, octopress-paginate, octopress-hooks, octopress-autoprefixer, font-awesome-sass]
+gems: [jekyll-paginate, github-pages, octopress, octopress-paginate, octopress-hooks, octopress-autoprefixer, font-awesome-sass]
 
 # Collections
 collections:
