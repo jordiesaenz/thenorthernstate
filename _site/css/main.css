@@ -4295,7 +4295,7 @@ html {
       font-size: 62.5%; } }
 
 body {
-  font-family: "Museo Sans", sans-serif;
+  font-family: "museo-sans", sans-serif;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
@@ -4324,7 +4324,7 @@ p, a, ol, ul, li, pre {
   font-weight: 400; }
 
 p {
-  font-family: "Museo", serif;
+  font-family: "museo", serif;
   margin-top: 15px; }
 
 a {
@@ -4354,7 +4354,7 @@ pre.codeblock {
     white-space: normal; }
 
 .tagline {
-  font-family: "Museo", serif;
+  font-family: "museo", serif;
   font-weight: 400;
   font-size: 2.4rem; }
 
@@ -4604,7 +4604,7 @@ div.marquee {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-family: "Museo Sans", sans-serif;
+    font-family: "museo-sans", sans-serif;
     text-align: center;
     margin: auto;
     text-decoration: none;
@@ -4629,7 +4629,7 @@ section.blog-feed {
   margin-top: 30px; }
   section.blog-feed .blog-feed-title {
     font-size: 2rem;
-    font-family: "Museo Sans", sans-serif;
+    font-family: "museo-sans", sans-serif;
     font-weight: 700; }
   section.blog-feed .category-tag {
     text-align: right;
@@ -4676,7 +4676,7 @@ section.instagram-feed {
   margin-top: 30px; }
   section.instagram-feed .instagram-feed-title {
     font-size: 2rem;
-    font-family: "Museo Sans", sans-serif;
+    font-family: "museo-sans", sans-serif;
     font-weight: 700; }
   section.instagram-feed .panel {
     margin-top: 40px;
@@ -4791,7 +4791,7 @@ footer {
     text-align: center;
     position: relative;
     margin-top: 30px;
-    font-family: "Museo Sans", sans-serif; }
+    font-family: "museo-sans", sans-serif; }
   footer .mc-field-group {
     height: 45px; }
     @media (max-width: 767px) {
@@ -4816,7 +4816,7 @@ footer {
     footer #mc_embed_signup label {
       display: none; }
     footer #mc_embed_signup p {
-      font-family: "Museo Sans", sans-serif;
+      font-family: "museo-sans", sans-serif;
       display: block;
       font-size: 1.2rem;
       text-align: center;
@@ -4872,7 +4872,7 @@ footer {
 .pagination {
   margin: 45px auto 0;
   text-align: center;
-  font-family: "Museo Sans", sans-serif;
+  font-family: "museo-sans", sans-serif;
   font-size: 1.6rem; }
   .pagination a, .pagination span {
     padding: 0 7.5px;
