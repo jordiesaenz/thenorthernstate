@@ -30,14 +30,18 @@ body {
     z-index: 999999;
     position: fixed;
     .overlay-title {
-      max-width: 720px;
-      padding: unit(2);
+      width: calc(100% - 15px);
+      max-width: 630px;
       text-align: center;
       margin: auto;
       font-size: 3.2rem;
       @include position(absolute, 50% null null 50%);
       @include transform(translate(-50%, -50%));
       a { font-size: 3.2rem; }
+      @media (max-width: $sm-max) {
+        font-size: 2.2rem;
+        a { font-size: 2.2rem; }
+      }
     }
   }
 }
