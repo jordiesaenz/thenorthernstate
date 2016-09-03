@@ -5,7 +5,7 @@
     {% for post in site.posts | limit: 6 %}
       <a class="post-link batch-c-1-1 batch-c-md-1-2 " href="{{ post.url }}">
         <div class="panel">
-          <div class="panel-image" style="background-image: url('{{ post.image }}')">
+          <div class="panel-image" style="background-image: url('{{ site.baseurl }}{{ post.image }}')">
             <div class="panel-image-overlay">
               <p class="content">{{ post.description }}</p>
             </div>

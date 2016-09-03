@@ -14,7 +14,7 @@ paginate:
         {% for post in paginator.posts %}
           <a class="post-link batch-c-1-1 batch-c-sm-1-2 batch-c-md-1-3" href="{{ post.url }}">
             <div class="panel">
-              <div class="panel-image" style="background-image: url('{{ post.image }}')">
+              <div class="panel-image" style="background-image: url('{{ site.baseurl }}{{ post.image }}')">
                 <div class="panel-image-overlay">
                   <p class="content">{{ post.description }}</p>
                 </div>
@@ -22,7 +22,7 @@ paginate:
               <div class="panel-heading">
                 <h4 class="post-title">{{ post.title }}</h4> - <time class="date">{{ post.date | date: "%D" }}</time>
               </div>
-              <p class="category-tag category-tag-{{ post.categories.first }}">{{ post.categories.first }}</p>
+              <!-- <p class="category-tag category-tag-{{ post.categories.first }}">{{ post.categories.first }}</p> -->
             </div>
           </a>
         {% endfor %}

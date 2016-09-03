@@ -14,7 +14,7 @@ paginate:
       {% for list in paginator.lists %}
         <a class="post-link batch-c-1-1 batch-c-sm-1-2 batch-c-md-1-3" href="{{ list.url }}">
           <div class="panel">
-            <div class="panel-image" style="background-image: url('{{ list.image }}')">
+            <div class="panel-image" style="background-image: url('{{ site.baseurl }}{{ list.image }}')">
               <div class="panel-image-overlay">
                 <p class="content">{{ list.description }}</p>
               </div>
