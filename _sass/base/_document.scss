@@ -57,16 +57,16 @@ section {
   @include shadow(1);
   @extend %transition;
   &-image {
-    height: unit(20);
-    max-height: unit(20);
+    height: unit(15);
+    max-height: unit(15);
     margin: unit(-2) unit(-2) unit(2);
     background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat;
     @extend %transition;
     &-overlay {
-      height: unit(20);
-      max-height: unit(20);
+      height: unit(15);
+      max-height: unit(15);
       @extend .color-overlay;
       background-color: $white-80;
       opacity: 0;

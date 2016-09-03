@@ -17,9 +17,9 @@ div.marquee {
     color: $white;
     padding: unit(2);
     font-size: 2.4rem;
-    font-weight: 700;
+    font-weight: 900;
     width: 100%;
-    max-width: 550px;
+    max-width: 500px;
     &.marquee-link {
       cursor: pointer;
       @include focus() {
@@ -28,7 +28,7 @@ div.marquee {
       }
     }
     @media (max-width: $sm-max) {
-      max-width: 310px;
+      max-width: 300px;
     }
   }
 }

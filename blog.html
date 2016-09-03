@@ -16,7 +16,7 @@ paginate:
             <div class="panel">
               <div class="panel-image" style="background-image: url('{{ post.image }}')">
                 <div class="panel-image-overlay">
-                  <p class="content">{{ post.content | strip_html | truncatewords: 30 }}</p>
+                  <p class="content">{{ post.description }}</p>
                 </div>
               </div>
               <div class="panel-heading">

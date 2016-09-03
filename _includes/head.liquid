@@ -1,16 +1,65 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.title %}{{ site.title | escape }} | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
+  <base href="{{ site.baseurl }}">
+  <meta name="url" content="{{ site.baseurl }}{{ page.url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="index" href="{{ site.baseurl }}" title="Foodlyweds">
+  <meta name="description" content="{{ page.description }}">
+  <meta name="google" content="nositelinkssearchbox">
+  <meta name="google-site-verification" content="-4lqxHAJiCQsBx4UbWJZPR3StZTeVmPYNxQow1HTts0" />
+  <meta name="generator" content="Jekyll">
+  <meta name="rating" content="General">
+  <link rel="author" href="{{ site.baseurl }}/about/">
+  <meta name="subject" content="food">
+
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.basurl }}/images/favicons/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.basurl }}/images/favicons/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.basurl }}/images/favicons/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.basurl }}/images/favicons/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.basurl }}/images/favicons/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.basurl }}/images/favicons/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.basurl }}/images/favicons/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.basurl }}/images/favicons/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" href="{{ site.basurl }}/images/favicons/favicon-196x196.png" sizes="196x196" />
+  <link rel="icon" type="image/png" href="{{ site.basurl }}/images/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="{{ site.basurl }}/images/favicons/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{{ site.basurl }}/images/favicons/favicon-16x16.png" sizes="16x16" />
+  <link rel="icon" type="image/png" href="{{ site.basurl }}/images/favicons/favicon-128.png" sizes="128x128" />
+
+  <!-- OPENGRAPH -->
+  <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
+  <meta property="og:type" content="{% if template == post or template == list %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:image" content="{{ page.image }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:author" content="Foodlyweds">
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="{{ site.baseurl }}{{ page.url }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:image" content="{{ page.image }}">
+
+  <!-- GOOGLE+ -->
+  <meta itemprop="name" content="{{ page.title }}">
+  <meta itemprop="description" content="{{ page.description }}">
+  <meta itemprop="image" content="{{ page.image }}">
+
+  <!-- TYPEKIT -->
   <script src="https://use.typekit.net/aod8hgl.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+  <!-- STYLES -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>

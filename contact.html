@@ -1,0 +1,31 @@
+---
+layout: page
+title: Contact
+permalink: /contact/
+description: Get in contact with Foodlyweds.
+---
+
+{% assign marquee_image = site.baseurl  | append: "/images/contact/marquee.jpg" %}
+{% include marquee.liquid content='Contact Us' image=marquee_image %}
+
+<div class="container">
+  <div class="batch-g batch-g--padding">
+
+    <div class="batch-c-1-1 batch-c-sm-2-3">
+      <section class="contact">
+        <h1>Let's get in touch.</h1>
+        <p>Got a question you're dying to ask us?</p>
+        <p>Looking to collaborate?</p>
+        <p>Your best bet is to shoot us an email at <a href="mailto:hello@foodlyweds.com">hello@foodlyweds.com</a>.</p>
+      </section>
+    </div>
+
+    <aside class="batch-c-1-1 batch-c-sm-1-3">
+      {% include instagram_feed.liquid %}
+      <section>
+
+      </section>
+    </aside>
+
+  </div>
+</div>

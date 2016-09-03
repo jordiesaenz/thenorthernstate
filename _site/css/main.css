@@ -4288,7 +4288,7 @@ section.about p {
   margin-top: 15px; }
 
 html {
-  font-size: 70.3125%;
+  font-size: 62.5%;
   color: #3C3739; }
   @media (max-width: 767px) {
     html {
@@ -4297,6 +4297,9 @@ html {
 body {
   font-family: "museo-sans", sans-serif;
   line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900; }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
   margin: 0; }
@@ -4324,7 +4327,7 @@ p, a, ol, ul, li, pre {
   font-weight: 400; }
 
 p {
-  font-family: "museo", serif;
+  font-family: "proxima-nova", serif;
   margin-top: 15px; }
 
 a {
@@ -4354,7 +4357,7 @@ pre.codeblock {
     white-space: normal; }
 
 .tagline {
-  font-family: "museo", serif;
+  font-family: "proxima-nova", serif;
   font-weight: 400;
   font-size: 2.4rem; }
 
@@ -4420,15 +4423,15 @@ section {
   margin: 30px auto 0;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
   .panel-image {
-    height: 300px;
-    max-height: 300px;
+    height: 225px;
+    max-height: 225px;
     margin: -30px -30px 30px;
     background-size: 100%;
     background-position: center center;
     background-repeat: no-repeat; }
     .panel-image-overlay {
-      height: 300px;
-      max-height: 300px;
+      height: 225px;
+      max-height: 225px;
       background-color: rgba(255, 255, 255, 0.8);
       opacity: 0; }
   .panel-heading > * {
@@ -4634,9 +4637,9 @@ div.marquee {
     color: #fff;
     padding: 30px;
     font-size: 2.4rem;
-    font-weight: 700;
+    font-weight: 900;
     width: 100%;
-    max-width: 550px; }
+    max-width: 500px; }
     div.marquee .marquee-info.marquee-link {
       cursor: pointer; }
       div.marquee .marquee-info.marquee-link:focus, div.marquee .marquee-info.marquee-link:active, div.marquee .marquee-info.marquee-link:hover {
@@ -4644,7 +4647,7 @@ div.marquee {
         color: #3C3739; }
     @media (max-width: 767px) {
       div.marquee .marquee-info {
-        max-width: 310px; } }
+        max-width: 300px; } }
 
 section.blog-feed {
   margin-top: 30px; }
@@ -4889,6 +4892,9 @@ footer {
         display: block;
         padding: 15px;
         width: 100%; } }
+  @media (max-width: 767px) {
+    footer {
+      padding-bottom: 78px; } }
 
 .pagination {
   margin: 45px auto 0;
@@ -4902,3 +4908,22 @@ footer {
     color: rgba(60, 55, 57, 0.8); }
     .pagination .view-all:focus, .pagination .view-all:active, .pagination .view-all:hover {
       color: #f8b; }
+
+section.list .list-item {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(60, 55, 57, 0.5); }
+section.list .list-item-images {
+  margin: 15px auto; }
+section.list .list-item-image {
+  padding: 5px; }
+
+.at4-follow .at4-follow-inner {
+  padding: 23.5px 30px 0 0 !important; }
+
+.at4-follow .at4-follow-inner .at4-follow-close-control {
+  display: none;
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  pointer-events: none; }

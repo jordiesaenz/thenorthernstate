@@ -7,20 +7,22 @@
         <div class="panel">
           <div class="panel-image" style="background-image: url('{{ post.image }}')">
             <div class="panel-image-overlay">
-              <p class="content">{{ post.content | strip_html | truncatewords: 30 }}</p>
+              <p class="content">{{ post.description }}</p>
             </div>
           </div>
           <div class="panel-heading">
             <h4 class="post-title">{{ post.title }}</h4> - <time class="date">{{ post.date | date: "%D" }}</time>
           </div>
-          <p class="category-tag category-tag-{{ post.categories.first }}">{{ post.categories.first }}</p>
+          <!-- <p class="category-tag category-tag-{{ post.categories.first }}">{{ post.categories.first }}</p> -->
         </div>
       </a>
     {% endfor %}
   </div>
 
-  <div class="pagination">
-    <a class="view-all" href="/blog/">View All Blog Posts <i class="fa fa-chevron-right"></i></a>
-  </div>
+  {% if site.posts.size > 6 %}
+    <div class="pagination">
+      <a class="view-all" href="/blog/">View All Blog Posts <i class="fa fa-chevron-right"></i></a>
+    </div>
+  {% endif %}
 
 </section>
