@@ -60,6 +60,7 @@ markdown: kramdown
 # Sass
 sass:
   sass_dir: _sass
+  style: compressed
 
 # Exclude
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor', 'Procfile', 'Rakefile']
