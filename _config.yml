@@ -14,7 +14,7 @@ url: "https://www.foodlyweds.com" # the base hostname & protocol for your site
 github_username:  jordiesaenz
 
 # Gems
-gems: [jekyll-paginate, octopress, octopress-paginate, octopress-hooks, octopress-autoprefixer, font-awesome-sass]
+gems: [jekyll-paginate, octopress, octopress-paginate, octopress-hooks, octopress-autoprefixer, font-awesome-sass, jekyll-sitemap]
 
 # Collections
 collections:

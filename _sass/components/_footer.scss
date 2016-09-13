@@ -11,78 +11,20 @@ footer {
     text-align: center;
     position: relative;
     margin-top: unit(2);
-    font-family: $sans-serif;
   }
-  .mc-field-group {
-    height: 45px;
-    @media (max-width: $sm-max) {
-      height: auto;
-    }
-  }
-  #mc_embed_signup {
+  .footer-logo {
     display: block;
     margin: auto;
-    position: relative;
+    max-width: 120px;
+    padding: 0 30px;
+  }
+  .made-by, .made-by a {
+    font-size: 1.2rem;
+    margin: auto;
     text-align: center;
-    @include position(relative);
-    div.mce_inline_error {
-      background-color: transparent;
-      color: $red;
-      text-align: center;
-      z-index: 1;
-      @include position(absolute, 15px null null 50%);
-      @include transform(translateX(-50%));
-    }
-    label { display: none; }
-    p {
-      font-family: $sans-serif;
-      display: block;
-      font-size: 1.2rem;
-      text-align: center;
-      margin: 0 0 unit(1);
-    }
-    @media (max-width: $sm-max) {
-      height: auto;
-      display: block;
-      float: none;
-      margin: auto;
-      margin-top: 7.5px;
-    }
   }
-  input[type="email"] {
-    background-color: $white;
-    border: 3px solid $black;
-    box-sizing: border-box;
-    display: inline-block;
-    height: 100%;
-    padding: 0 60px 0 15px;
-    @include border-radius(0);
-    @include transform(translateX(6px));
-    &:hover, &:active, &:focus {
-      outline: none;
-    }
-    & + label {
-      display: none;
-      visibility: hidden;
-    }
-    @media (max-width: $sm-max) {
-      display: block;
-      padding: unit(1);
-      width: 100%;
-      @include transform(none);
-    }
-  }
-  .btn {
-    height: 100%;
-    vertical-align: middle;
-    padding: 0 15px;
-    @include btn-styles($white, $black, $white, $blue);
-    @include transform(translateY(-1px));
-    @media (max-width: $sm-max) {
-      display: block;
-      padding: 15px;
-      width: 100%;
-    }
+  i.fa.fa-heart {
+    color: $red;
   }
   @media (max-width: $sm-max) {
     padding-bottom: unit(2) + 48px;
