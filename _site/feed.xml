@@ -5,8 +5,8 @@
     <description>We're two newlyweds living in Orange County, and to put it simply, we're eating all the things. Donuts. Coffee. Burgers. Boba. Pizza. You name it, we're into it.</description>
     <link>https://www.foodlyweds.com/</link>
     <atom:link href="https://www.foodlyweds.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 08 Sep 2016 15:11:32 -0700</pubDate>
-    <lastBuildDate>Thu, 08 Sep 2016 15:11:32 -0700</lastBuildDate>
+    <pubDate>Mon, 12 Sep 2016 18:31:33 -0700</pubDate>
+    <lastBuildDate>Mon, 12 Sep 2016 18:31:33 -0700</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -19,10 +19,10 @@
 
 &lt;div class=&quot;post-images batch-g batch-g--padding batch-g--valign-center&quot;&gt;
   &lt;div class=&quot;post-image batch-c-1-1 batch-c-sm-1-2&quot;&gt;
-    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//queso.jpg&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//queso.jpg&quot; alt=&quot;Hopdoddy Queso and Fries&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;post-image batch-c-1-1 batch-c-sm-1-2&quot;&gt;
-    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//truffle_fries.jpg&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//truffle_fries.jpg&quot; alt=&quot;Hopdoddy Truffle Fries&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -30,10 +30,10 @@
 
 &lt;div class=&quot;post-images batch-g batch-g--padding batch-g--valign-center&quot;&gt;
   &lt;div class=&quot;post-image batch-c-1-1 batch-c-sm-1-2&quot;&gt;
-    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//spank.jpg&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//spank.jpg&quot; alt=&quot;Hopdoddy T-Shirt&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;post-image batch-c-1-1 batch-c-sm-1-2&quot;&gt;
-    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//menu.jpg&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//menu.jpg&quot; alt=&quot;Hopdoddy Menu&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -51,13 +51,13 @@
 
 &lt;div class=&quot;post-images batch-g batch-g--padding batch-g--valign-center batch-g--align-center&quot;&gt;
   &lt;div class=&quot;post-image batch-c-1-1&quot;&gt;
-    &lt;img class=&quot;post-image img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//drinks.jpg&quot;&gt;
+    &lt;img class=&quot;post-image img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//drinks.jpg&quot; alt=&quot;Hopdoddy Cocktails&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;batch-c-1-1 batch-c-sm-1-2&quot;&gt;
-    &lt;img class=&quot;post-image img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//skinny_dip.jpg&quot;&gt;
+    &lt;img class=&quot;post-image img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//skinny_dip.jpg&quot; alt=&quot;Hopdoddy Skinny Dip&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;batch-c-1-1 batch-c-sm-1-2&quot;&gt;
-    &lt;img class=&quot;post-image img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//lil_prick.jpg&quot;&gt;
+    &lt;img class=&quot;post-image img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//lil_prick.jpg&quot; alt=&quot;Hopdoddy Lil Prick&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -75,10 +75,10 @@ Selecting burgers was the most challenging part of our meal because EVERY ONE so
 
 &lt;div class=&quot;post-images batch-g batch-g--padding batch-g--valign-center&quot;&gt;
   &lt;div class=&quot;post-image batch-c-1-1 batch-c-sm-1-2&quot;&gt;
-    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//buffalo_bill.jpg&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//buffalo_bill.jpg&quot; alt=&quot;Hopdoddy Buffalo Bill Burger&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;post-image batch-c-1-1 batch-c-sm-1-2&quot;&gt;
-    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//tuna.jpg&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//tuna.jpg&quot; alt=&quot;Hopdoddy Ahi Tuna Burger&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -86,11 +86,11 @@ Selecting burgers was the most challenging part of our meal because EVERY ONE so
 
 &lt;div class=&quot;post-images batch-g batch-g--padding batch-g--valign-center&quot;&gt;
   &lt;div class=&quot;post-image batch-c-1-1 batch-c-sm-1-2&quot;&gt;
-    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//burger_menu.jpg&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//burger_menu.jpg&quot; alt=&quot;Hopdoddy Burger Menu&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;batch-c-1-1 batch-c-sm-1-2&quot;&gt;
-    &lt;img class=&quot;post-image img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//primetime.jpg&quot;&gt;
-    &lt;img class=&quot;post-image img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//greek.jpg&quot;&gt;
+    &lt;img class=&quot;post-image img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//primetime.jpg&quot; alt=&quot;Hopdoddy Primetime Burger&quot;&gt;
+    &lt;img class=&quot;post-image img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//greek.jpg&quot; alt=&quot;Hopdoddy Greek Burger&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -98,17 +98,17 @@ Selecting burgers was the most challenging part of our meal because EVERY ONE so
 
 &lt;div class=&quot;post-images batch-g batch-g--padding batch-g--valign-center&quot;&gt;
   &lt;div class=&quot;post-image batch-c-1-1&quot;&gt;
-    &lt;img class=&quot;post-image img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//shakes.jpg&quot;&gt;
+    &lt;img class=&quot;post-image img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//shakes.jpg&quot; alt=&quot;Hopdoddy Milkshakes&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Okay, and now, onto dessert...We ordered the &lt;strong&gt;NUTELLA &amp; CHOCOLATE PRETZEL SHAKE&lt;/strong&gt; and the &lt;strong&gt;RED VELVET CAKE SHAKE&lt;/strong&gt;. We asked how the red velvet cake shake tasted exactly like red velvet and they let us know that they make a fresh red velvet cake batter in house every day and that’s what makes it so good. With every sip, you could taste that this was the real deal. No artificial flavoring business. Just straight up cake batter in a milkshake. Yessss pleaaase.&lt;/p&gt;
 
 &lt;div class=&quot;post-images batch-g batch-g--padding batch-g--valign-center&quot;&gt;
   &lt;div class=&quot;post-image batch-c-1-1 batch-c-sm-1-2&quot;&gt;
-    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//sauces.jpg&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//sauces.jpg&quot; alt=&quot;Hopdoddy Condiments&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;post-image batch-c-1-1 batch-c-sm-1-2&quot;&gt;
-    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//liqueurs.jpg&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//liqueurs.jpg&quot; alt=&quot;Hopdoddy Housemade Liqueurs&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -116,24 +116,24 @@ Selecting burgers was the most challenging part of our meal because EVERY ONE so
 
 &lt;div class=&quot;post-images batch-g batch-g--padding batch-g--valign-center&quot;&gt;
   &lt;div class=&quot;post-image batch-c-1-1&quot;&gt;
-    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//place.jpg&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//place.jpg&quot; alt=&quot;Hopdoddy Mission Statement&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;div class=&quot;post-images batch-g batch-g--padding batch-g--valign-center&quot;&gt;
   &lt;div class=&quot;post-image batch-c-1-1 batch-c-sm-1-2&quot;&gt;
-    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//craft_draft.jpg&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//craft_draft.jpg&quot; alt=&quot;Hopdoddy Craft Drafts&quot;&gt;
   &lt;/div&gt;
   &lt;div class=&quot;post-image batch-c-1-1 batch-c-sm-1-2&quot;&gt;
-    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//liquors.jpg&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//liquors.jpg&quot; alt=&quot;Hopdoddy Bar&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;p&gt;And don’t be discouraged if there’s a long line when you get there. You just may get a cowbell that will get you free fries. Also, online ordering is a thing. Happy Hour is a thing (3:30-6:30). And don’t forget - that garlic aioli is a thing.&lt;/p&gt;
+&lt;p&gt;And don’t be discouraged if there’s a long line when you get there. You just may get a cowbell that will get you free fries. Also, online ordering is a thing. Happy Hour is a thing (3:00-6:30). And don’t forget - that garlic aioli is a thing.&lt;/p&gt;
 
 &lt;div class=&quot;post-images batch-g batch-g--padding batch-g--valign-center&quot;&gt;
   &lt;div class=&quot;post-image batch-c-1-1&quot;&gt;
-    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//exterior.jpg&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; src=&quot;/images/posts/2016-09-08-hopdoddy//exterior.jpg&quot; alt=&quot;Hopdoddy Exterior&quot;&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 

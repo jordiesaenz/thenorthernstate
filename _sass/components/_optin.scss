@@ -1,0 +1,65 @@
+section.optin {
+  margin-top: unit(3);
+  .optin-title {
+    font-size: 2rem;
+    font-family: $sans-serif;
+    font-weight: 700;
+  }
+  #mc_embed_signup {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 1.4rem;
+    @include position(relative);
+    div.mce_inline_error {
+      background-color: transparent;
+      color: $red;
+      text-align: center;
+      z-index: 1;
+      @include position(absolute, 15px null null 50%);
+      @include transform(translateX(-50%));
+    }
+    label { display: none; }
+    p {
+      font-family: $sans-serif;
+      display: block;
+      font-size: 1.6rem;
+      text-align: center;
+      margin: 0 0 unit(1);
+    }
+    @media (max-width: $md-max) {
+      height: auto;
+      display: block;
+      float: none;
+      margin: auto;
+      margin-top: 7.5px;
+    }
+  }
+  input[type="email"] {
+    background-color: $white;
+    border: 3px solid $black;
+    box-sizing: border-box;
+    height: 100%;
+    display: block;
+    padding: unit(1);
+    width: 100%;
+    @include transform(none);
+    @include border-radius(0);
+    &:hover, &:active, &:focus {
+      outline: none;
+    }
+    & + label {
+      display: none;
+      visibility: hidden;
+    }
+  }
+  .btn {
+    height: 100%;
+    display: block;
+    padding: 15px;
+    width: 100%;
+    vertical-align: middle;
+    @include btn-styles($white, $black, $white, $blue);
+    @include transform(translateY(-1px));
+  }
+}

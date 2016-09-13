@@ -17,3 +17,5 @@ gem 'octopress-autoprefixer'
 
 gem 'sprockets'
 gem 'font-awesome-sass'
+
+gem 'jekyll-sitemap'
