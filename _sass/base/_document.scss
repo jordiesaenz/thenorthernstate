@@ -55,6 +55,7 @@ section {
   padding: unit(2);
   margin: unit(2) auto 0;
   @include shadow(1);
+  @include border-radius($border-radius);
   @extend %transition;
   &-image {
     height: unit(15);

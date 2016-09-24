@@ -1,0 +1,178 @@
+@mixin appearance-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.radio-checkbox-styles {
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+  content: "";
+  border: 1px solid $black-50;
+}
+form {
+  text-align: left;
+  font-size: 1.6rem;
+}
+.form-control {
+  margin-bottom: 1.25rem;
+}
+label {
+}
+.radio-buttons-field {
+  > label:first-of-type {
+    display: block;
+    margin-bottom: 1.25rem;
+  }
+}
+.input-item {
+  margin-bottom: 1.25rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  @include appearance-none;
+  width: 100%;
+  line-height: 20px;
+  padding: unit(1) unit(1);
+  box-sizing: border-box;
+  background-color: $white;
+  border: 1px solid $black-50;
+  @include border-radius($border-radius);
+  @extend %transition;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  @include focus() {
+    outline: none;
+    border-color: $pink;
+  }
+}
+
+// Placeholders
+*::-webkit-input-placeholder {
+  color: $black-50;
+}
+*:-moz-placeholder {
+  color: $black-50;
+}
+*::-moz-placeholder {
+  color: $black-50;
+}
+*:-ms-input-placeholder {
+  color: $black-50 !important;
+}
+
+// Errors
+.form-errors, #mc_embed_signup div.mce_inline_error {
+  margin: 0;
+  background-color: transparent !important;
+  color: $red !important;
+}
+
+// Text Area
+textarea {
+  padding: 12.5px 16px;
+  height: 75px;
+}
+
+// Select
+select {
+  @include appearance-none;
+}
+.country-field,
+.select-box-field {
+  position: relative;
+}
+.country-field:after,
+.select-box-field:after {
+  font-family: "FontAwesome";
+  font-size: 2.4rem;
+  line-height: 50px;
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  height: 50px;
+  content: "\f0d7";
+  pointer-events: none;
+  color: $black-50;
+}
+
+// Radio
+input[type=radio] {
+  @include appearance-none;
+  display: none;
+}
+.radio-buttons-field .radio {
+  position: relative;
+  margin-bottom: 10px;
+  label {
+    color: $black-50;
+    cursor: pointer;
+    &:before {
+      @extend .radio-checkbox-styles;
+      @include border-radius(50%);
+    }
+  }
+  input[type=radio] + span {
+    &:after {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 14px;
+      height: 14px;
+      content: "";
+      background-color: $pink;
+      @include transform(scale(0));
+      @include border-radius(50%);
+      @extend %transition;
+    }
+  }
+  input[type=radio]:checked + span {
+    &:after {
+      @include transform(scale(1));
+    }
+  }
+}
+
+// Checkbox
+input[type=checkbox] {
+  @include appearance-none;
+  display: none;
+}
+.checkbox-field {
+  position: relative;
+}
+.checkbox-field input + label {
+  color: $black-50;
+  cursor: pointer;
+  &:before {
+    @extend .radio-checkbox-styles;
+    @include border-radius($border-radius);
+  }
+}
+input[type=checkbox] + span {
+  &:after {
+    font-family: "FontAwesome";
+    font-size: 18px;
+    position: absolute;
+    top: -2px;
+    left: 3px;
+    content: "\f00c";
+    color: $black-50;
+    @include transform(scale(0));
+    @extend %transition;
+  }
+}
+input[type=checkbox]:checked + span {
+  &:after {
+    @include transform(scale(1));
+  }
+}

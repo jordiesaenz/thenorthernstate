@@ -4,6 +4,8 @@ $base-unit: 15px;
   @return $i * $base-unit;
 }
 
+$border-radius: 5px;
+
 // Breakpoints
 $xs-max: 479px;
 $sm-min: $xs-max + 1;
@@ -29,7 +31,6 @@ $white-80: rgba(255, 255, 255, .8);
 $white-50: rgba(255, 255, 255, .5);
 
 $red: #e46;
-
 $pink: #f8b;
 $blue: #3ef;
 $yellow: #fc7;

@@ -1,12 +1,14 @@
-@mixin btn-styles($color, $background-color, $hover-color, $hover-background-color) {
+@mixin btn-styles($color, $background-color) {
+  border: 1px solid adjust-color($background-color, $saturation: -30%, $lightness: -10%);
   color: $color;
-  background-color: $background-color;
+  @include background-image(linear-gradient(to bottom right, lighten($background-color, 10%), $background-color));
+  box-shadow: 0 2px 0 adjust-color($background-color, $saturation: -30%, $lightness: -10%), 0 2px 2px rgba(0, 0, 0, 0.1);
   &:hover,
   &:focus,
   &:active {
-    outline: none;
-    color: $hover-color;
-    background-color: $hover-background-color;
+    box-shadow: 0 3px 0px adjust-color($background-color, $saturation: -30%, $lightness: -10%), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.2);
+    @include transform(translateY(-1px));
+    @include background-image(linear-gradient(to bottom right, lighten($background-color, 12.5%), lighten($background-color, 2.5%)));
   }
 }
 %btn-block-styles {
@@ -17,16 +19,25 @@
 }
 .btn {
   display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: $sans-serif;
   margin: 0;
-  padding: 15px 30px;
+  padding: unit(1) unit(2);
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
   border: none;
   @extend %transition;
-  @include border-radius(0);
+  @include border-radius($border-radius);
   &.btn-block {
     @extend %btn-block-styles;
+  }
+  &.btn-optin {
+    @include btn-styles($white, $pink);
+    display: block;
+    margin-top: unit(2);
+    &-popup { margin-top: unit(1); }
   }
 }
