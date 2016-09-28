@@ -43,5 +43,8 @@ section.optin {
     @include focus() {
       color: $red;
     }
+    @media (max-width: $sm-max) {
+      padding-bottom: unit(5);
+    }
   }
 }
