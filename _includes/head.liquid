@@ -34,10 +34,10 @@
   <link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicons/favicon-128.png" sizes="128x128" />
 
   <!-- OPENGRAPH -->
-  <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:type" content="{% if template == post or template == list %}article{% else %}website{% endif %}">
   <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:image" content="{{ site.baseurl }}{{ page.image }}">
+  <meta property="og:image" content="{{ site.url }}{{ page.image }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="en_US">
@@ -45,15 +45,15 @@
 
   <!-- TWITTER -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="{{ site.baseurl }}{{ page.url }}">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{{ site.baseurl }}{{ page.image }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
 
   <!-- GOOGLE+ -->
   <meta itemprop="name" content="{{ page.title }}">
   <meta itemprop="description" content="{{ page.description }}">
-  <meta itemprop="image" content="{{ site.baseurl }}{{ page.image }}">
+  <meta itemprop="image" content="{{ site.url }}{{ page.image }}">
 
   <!-- FACEBOOK PIXEL -->
   <script>
