@@ -15,6 +15,6 @@ $( document ).ready(function() {
       return this;
     }
     setInterval(function(){
-      $('#optin-open').shake();
+      $('.btn-optin#optin-open').shake();
     },5000);
 });
