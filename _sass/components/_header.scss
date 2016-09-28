@@ -6,6 +6,7 @@ header {
   @include position(fixed, 0 0 null 0);
   @include shadow(1);
   .logo-link {
+    text-decoration: none;
     @include position(absolute, 50% null null 50%);
     @include transform(translateX(-50%) translateY(-50%));
     .fa {
@@ -17,10 +18,19 @@ header {
         @include transform(rotate(-180deg) translateY(calc(-50% + 15px)));
       }
     }
-    .logo {
-      max-height: unit(2.5);
-      height: auto;
-      width: auto;
+    .header-logo {
+      background: url("/images/logos/text_logo.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-size: 3.6rem;
+      font-weight: 900;
+      line-height: 100%;
+      margin: 0;
+      text-decoration: none;
+      color: transparent;
+      height: 100%;
+      width: 100%;
     }
     &:hover, &:active, &:focus {
       .fa { color: $pink; }

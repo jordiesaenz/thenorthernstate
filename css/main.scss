@@ -2,14 +2,14 @@
 ---
 @charset "utf-8";
 
+@import "base/imports";
+
 @import "normalize";
 
 @import "bourbon/bourbon";
 @import "base/variables";
 
-
 @import "batch";
-
 
 @import "base/utilities";
 @import "base/extends";
@@ -27,7 +27,6 @@
 @import "components/about";
 @import "components/footer";
 @import "components/pagination";
-@import "components/list";
 @import "components/post";
 @import "components/addthis";
 @import "components/optin";

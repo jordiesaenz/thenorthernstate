@@ -19,3 +19,4 @@ gem 'sprockets'
 gem 'font-awesome-sass'
 
 gem 'jekyll-sitemap'
+gem 'jekyll-redirect-from'

@@ -1,28 +1,17 @@
 <section class="blog-feed">
-  <p class="blog-feed-title">Latest Blog Posts:</p>
-
-  <div class="batch-g batch-g--padding">
-    {% for post in site.posts | limit: 6 %}
-      <a class="post-link batch-c-1-1 batch-c-md-1-2 " href="{{ post.url }}">
-        <div class="panel">
-          <div class="panel-image" style="background-image: url('{{ site.baseurl }}{{ post.image }}')">
-            <div class="panel-image-overlay">
-              <p class="content">{{ post.description }}</p>
-            </div>
-          </div>
-          <div class="panel-heading">
-            <h4 class="post-title">{{ post.title }}</h4> -&nbsp;<time class="date">{{ post.date | date: "%D" }}</time>
-          </div>
-          <!-- <p class="category-tag category-tag-{{ post.categories.first }}">{{ post.categories.first }}</p> -->
-        </div>
-      </a>
-    {% endfor %}
-  </div>
-
+  {% for post in site.posts | limit: 6 %}
+    <a class="post-link" href="{{ post.url }}">
+      <div class="post-link-content">
+        <h3 class="post-title">{{ post.title }}</h3>
+        <img src="{{ site.baseurl }}{{ post.image }}" class="img-responsive">
+        <p class="body">{{ post.description }} {{ post.content | strip_html | remove: post.title | truncatewords: 50 }}</p>
+        <p class="read-more">Keep Reading <i class="fa fa-chevron-right"></i></p>
+      </div>
+    </a>
+  {% endfor %}
   {% if site.posts.size > 6 %}
     <div class="pagination">
       <a class="view-all" href="/blog/">View All Blog Posts <i class="fa fa-chevron-right"></i></a>
     </div>
   {% endif %}
-
 </section>

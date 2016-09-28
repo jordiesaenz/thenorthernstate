@@ -19,30 +19,24 @@ section.blog-feed {
       background-color: $blue;
     }
   }
+  .read-more {
+    text-align: right;
+    color: $red;
+    @extend %transition;
+    @include focus() {
+      color: $blue;
+    }
+  }
   .post-link {
     color: $black;
     text-decoration: none;
     @include transition(none);
-    .panel { position: relative; }
-    .content {
-      width: calc(100% - 30px);
-      margin: auto;
-      text-align: center;
-      color: $black;
-      z-index: 105;
-      @include position(absolute, 50% null null 50%);
-      @include transform(translate(-50%, -50%));
+    .post-title {
+      font-size: 3.6rem;
+      padding-bottom: unit(1);
     }
-    @include focus() {
-      color: $pink;
-      .panel {
-        @include shadow(2);
-        @include transform(translateY(-3px));
-      }
-      .panel-image {
-        background-size: 105%;
-        &-overlay { opacity: 1; }
-      }
+    &-content {
+      padding-bottom: unit(2);
     }
   }
 }

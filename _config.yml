@@ -14,7 +14,7 @@ url: "https://www.foodlyweds.com" # the base hostname & protocol for your site
 github_username:  jordiesaenz
 
 # Gems
-gems: [jekyll-paginate, octopress, octopress-paginate, octopress-hooks, octopress-autoprefixer, font-awesome-sass, jekyll-sitemap]
+gems: [jekyll-paginate, octopress, octopress-paginate, octopress-hooks, octopress-autoprefixer, font-awesome-sass, jekyll-sitemap, jekyll-redirect-from]
 
 # Collections
 collections:
@@ -22,10 +22,6 @@ collections:
     name: posts
     output: true
     path: /blog/posts/:path
-  lists:
-    name: lists
-    output: true
-    path: /lists/:path
 
 # Defaults
 defaults:
@@ -39,11 +35,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  -
-    scope:
-      type: "lists"
-    values:
-      layout: "list"
 
 # Pagination
 pagination:

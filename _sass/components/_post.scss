@@ -1,7 +1,15 @@
 section.post {
+  article { margin-top: unit(2); }
   .post-images {
     margin: unit(1) auto;
   }
   .post-image { padding: 5px; }
-  .fb-comments span { margin-top: unit(2); } 
+  .fb-comments span { margin-top: unit(2); }
+  .list-item {
+    padding: unit(2) 0;
+  }
+  .social-links {
+    margin: 0;
+    a { padding-right: unit(0.5); }
+  }
 }
