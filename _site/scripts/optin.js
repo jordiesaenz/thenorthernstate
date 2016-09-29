@@ -2,13 +2,11 @@ $( document ).ready(function() {
     $("#optin-close").click(function() {
       $(".optin-overlay").slideToggle("fast");
     });
-    $('#optin-open', 'section.optin').click(function() {
+    $('#article-optin-open').click(function() {
       $(".optin-overlay").slideToggle("fast");
-      console.log("sidebar link");
     });
-    $('#optin-open', 'article').click(function() {
+    $('#sidebar-optin-open').click(function() {
       $(".optin-overlay").slideToggle("fast");
-      console.log("article link");
     });
     jQuery.fn.shake = function() {
       this.each(function(i) {
