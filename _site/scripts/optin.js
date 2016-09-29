@@ -4,9 +4,11 @@ $( document ).ready(function() {
     });
     $('#optin-open', 'section.optin').click(function() {
       $(".optin-overlay").slideToggle("fast");
+      console.log("sidebar link");
     });
-    $('a#optin-open', 'section.post article').click(function() {
+    $('#optin-open', 'article').click(function() {
       $(".optin-overlay").slideToggle("fast");
+      console.log("article link");
     });
     jQuery.fn.shake = function() {
       this.each(function(i) {

@@ -5,7 +5,7 @@ $( document ).ready(function() {
     $('#optin-open', 'section.optin').click(function() {
       $(".optin-overlay").slideToggle("fast");
     });
-    $('a#optin-open', 'section.post article').click(function() {
+    $('#optin-open', 'article').click(function() {
       $(".optin-overlay").slideToggle("fast");
     });
     jQuery.fn.shake = function() {
