@@ -2,10 +2,10 @@ $( document ).ready(function() {
     $("#optin-close").click(function() {
       $(".optin-overlay").slideToggle("fast");
     });
-    $('#optin-open', 'section.optin').click(function() {
+    $('#article-optin-open').click(function() {
       $(".optin-overlay").slideToggle("fast");
     });
-    $('#optin-open', 'article').click(function() {
+    $('#sidebar-optin-open').click(function() {
       $(".optin-overlay").slideToggle("fast");
     });
     jQuery.fn.shake = function() {
