@@ -4,7 +4,7 @@
       <div class="post-link-content">
         <h3 class="post-title">{{ post.title }}</h3>
         <img src="{{ site.baseurl }}{{ post.image }}" class="img-responsive">
-        <p class="body">{{ post.description }} {{ post.content | strip_html | remove: post.title | truncatewords: 50 }}</p>
+        <p class="body">{{ post.content | strip_html | remove: post.title | truncatewords: 50 }}</p>
         <p class="read-more">Keep Reading <i class="fa fa-chevron-right"></i></p>
       </div>
     </a>
