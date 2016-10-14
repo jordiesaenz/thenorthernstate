@@ -10,7 +10,7 @@ title: The Northern State
 email: hello@jordiesaenz.com
 description: Orange County native Jordie Saenz writes gentle yet visceral songs with an honest voice and head full of questions.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.thenorthernstate.com" # the base hostname & protocol for your site
+url: "http://www.thenorthernstate.com" # the base hostname & protocol for your site
 github_username:  jordiesaenz
 
 # Gems
