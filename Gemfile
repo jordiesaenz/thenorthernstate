@@ -10,6 +10,3 @@ gem 'puma'
 gem 'shotgun', :group => :development
 
 gem 'sprockets'
-
-gem 'jekyll-sitemap'
-gem 'jekyll-redirect-from'
