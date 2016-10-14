@@ -6,44 +6,15 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Foodlyweds
-email: hello@foodlyweds.com
-description: We're two newlyweds living in Orange County, and to put it simply, we're eating all the things. Donuts. Coffee. Burgers. Boba. Pizza. You name it, we're into it.
+title: The Northern State
+email: hello@jordiesaenz.com
+description: Orange County native Jordie Saenz writes gentle yet visceral songs with an honest voice and head full of questions.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.foodlyweds.com" # the base hostname & protocol for your site
+url: "https://www.thenorthernstate.com" # the base hostname & protocol for your site
 github_username:  jordiesaenz
 
 # Gems
-gems: [jekyll-paginate, octopress, octopress-paginate, octopress-hooks, octopress-autoprefixer, font-awesome-sass, jekyll-sitemap, jekyll-redirect-from]
-
-# Collections
-collections:
-  posts:
-    name: posts
-    output: true
-    path: /blog/posts/:path
-
-# Defaults
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
-  -
-    scope:
-      type: "posts"
-    values:
-      layout: "post"
-
-# Pagination
-pagination:
-  limit: false
-  per_page: 6
-
-# Outputting
-permalink:     /blog/posts/:slug
-
+gems: []
 
 # Build settings
 markdown: kramdown

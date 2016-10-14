@@ -1,41 +1,22 @@
-// Layout
-$base-unit: 15px;
-@function unit($i) {
-  @return $i * $base-unit;
-}
-
-$border-radius: 5px;
-
-// Breakpoints
-$xs-max: 479px;
-$sm-min: $xs-max + 1;
-$sm-max: 767px;
-$md-min: $sm-max + 1;
-$md-max: 991px;
-$lg-min: $md-max + 1;
-$lg-max: 1499px;
-$xl-min: $lg-max + 1;
-
-// Container
-$container-gutter: unit(4);
-$container-gutter-md: unit(3);
-$container-gutter-sm: unit(2);
-$container-gutter-xs: unit(1);
-
 // Colors
-$black: #3C3739;
-$black-80: rgba($black, .8);
-$black-50: rgba($black, .5);
-$white: #fff;
-$white-80: rgba(255, 255, 255, .8);
-$white-50: rgba(255, 255, 255, .5);
+$cyan: #18FFFF;
+$pink: #FF4081;
+
+$purple: #E040FB;
+$black: #0f100c;
+$black-80: transparentize($black, 0.2);
+$black-50: transparentize($black, 0.5);
+$white: #fffefe;
+$white-80: transparentize($white, 0.2);
+$white-50: transparentize($white, 0.5);
 
 $red: #e46;
-$pink: #f8b;
-$blue: #3ef;
-$yellow: #fc7;
-$light-gray: #f9fbfb;
+$blue: #1b9;
+$yellow: #dcb660;
 
 // Fonts
-$sans-serif: "museo-sans", sans-serif;
-$serif: "proxima-nova", serif;
+$sans-serif: "Arapey", sans-serif;
+$serif: "Arapey", serif;
+
+// Layout
+$base-unit: 15px;

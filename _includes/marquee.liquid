@@ -1,7 +1,0 @@
-<div class="marquee" style="background-image: url('{{ site.baseurl }}{{ include.image }}')">
-  {% if include.link %}
-    <a href="{{ include.link }}" class="marquee-info marquee-link">{% if page.url contains "/blog/posts/" %}<h1 class="marquee-info">{{ include.content }}</h1>{% else %}<h1 class="marquee-info">{{ include.content }}</h2>{% endif %}<i class="fa fa-arrow-right"></i></a>
-  {% else %}
-    {% if page.url contains "/blog/posts/" %}<h1 class="marquee-info">{{ include.content }}</h1>{% else %}<h1 class="marquee-info">{{ include.content }}</h2>{% endif %}
-  {% endif %}
-</div>

@@ -3,19 +3,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>{% unless page.title == site.title %}{{ site.title | escape }} | {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endunless %}</title>
+  <title>{{ site.title }}</title>
 
   <base href="{{ site.baseurl }}">
   <meta name="url" content="{{ site.baseurl }}{{ page.url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="index" href="{{ site.baseurl }}" title="Foodlyweds">
+  <link rel="index" href="{{ site.baseurl }}" title="The Northern State">
   <meta name="description" content="{{ page.description }}">
-  <meta name="google-site-verification" content="-4lqxHAJiCQsBx4UbWJZPR3StZTeVmPYNxQow1HTts0" />
   <meta name="generator" content="Jekyll">
   <meta name="rating" content="General">
-  <link rel="author" href="{{ site.baseurl }}/about/">
-  <meta name="subject" content="food">
+  <link rel="author" href="https://www.jordiesaenz.com">
+  <meta name="subject" content="music">
   <meta name="geo.region" content="US-CA">
 
   <!-- FAVICONS -->
@@ -35,13 +34,13 @@
 
   <!-- OPENGRAPH -->
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:type" content="{% if template == post or template == list %}article{% else %}website{% endif %}">
+  <meta property="og:type" content="music.song">
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:image" content="{{ site.url }}{{ page.image }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="en_US">
-  <meta property="article:author" content="Foodlyweds">
+  <meta property="article:author" content="Jordie Saenz">
 
   <!-- TWITTER -->
   <meta name="twitter:card" content="summary">
@@ -56,23 +55,6 @@
   <meta itemprop="image" content="{{ site.url }}{{ page.image }}">
 
   <!-- FACEBOOK PIXEL -->
-  <script>
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-    document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-    fbq('init', '335423800136035');
-    fbq('track', "PageView");
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=335423800136035&ev=PageView&noscript=1"/>
-  </noscript>
-
-  <!-- TYPEKIT -->
-  <script src="https://use.typekit.net/aod8hgl.js"></script>
-  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   <!-- STYLES -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}?v={{ site.time | date_to_xmlschema }}">

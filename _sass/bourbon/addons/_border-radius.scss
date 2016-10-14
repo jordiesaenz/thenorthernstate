@@ -46,3 +46,34 @@
   border-bottom-left-radius: $radii;
   border-top-left-radius: $radii;
 }
+
+@mixin border-radius($value) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+@mixin border-radii($top-left: 0, $top-right: 0, $bottom-left: 0, $bottom-right: 0) {
+  -webkit-border-top-left-radius: $top-left;
+  -webkit-border-top-right-radius: $top-right;
+  -webkit-border-bottom-left-radius: $bottom-left;
+  -webkit-border-bottom-right-radius: $bottom-right;
+
+  -moz-border-radius-topleft: $top-left;
+  -moz-border-radius-topright: $top-right;
+  -moz-border-radius-bottomleft: $bottom-left;
+  -moz-border-radius-bottomright: $bottom-right;
+
+  border-top-left-radius: $top-left;
+  border-top-right-radius: $top-right;
+  border-bottom-left-radius: $bottom-left;
+  border-bottom-right-radius: $bottom-right;
+
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
